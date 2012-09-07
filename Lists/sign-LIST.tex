@@ -137,6 +137,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%% The hotel rooms
 \NEW{Sign}{\sBrideRoom}{
   \s\MYname	{\cBride{\MYname{}}'s Hotel Room}
   \s\MYloc	{- 004}
@@ -147,6 +148,67 @@
 \NEW{Sign}{\sGroomRoom}{
   \s\MYname	{\cGroomA{\MYname{}}'s Hotel Room}
   \s\MYloc	{- 004}
-  \s\MYtext	{The nameplaque says \cGroom{\MYname{}}. If you have the room key with badge number 101, you may enter the room.}
+  \s\MYtext	{The name plaque says \cGroom{\MYname{}}. If you have the room key with badge number 101, you may enter the room.}
   \s\MYitems {\iBible}
   } 
+  
+\NEW{Sign}{\sScientistRoom}{
+  \s\MYname	{\cScientist{\MYname{}}'s Hotel Room}
+  \s\MYloc	{- 004}
+  \s\MYtext	{The name plaque says \cScientist{\MYname{}}. Below it is another name plaque that says \cKid{\Myname{}}. If you have the room key with badge number 102 or 103, you may enter the room.}
+  \s\MYitems {\iBible}
+  }
+  
+\NEW{Sign}{\sRivalRoom}{
+  \s\MYname	{\cRival{\MYname{}}'s Hotel Room}
+  \s\MYloc	{- 004}
+  \s\MYtext	{The name plaque says \cRival{\MYname{}}.  If you have the room key with badge number 104, you may enter the room.}
+  \s\MYitems {\iBible}
+  }
+  
+\NEW{Sign}{\sPastorRoom}{
+  \s\MYname	{\cRival{\MYname{}}'s Hotel Room}
+  \s\MYloc	{- 004}
+  \s\MYtext	{The name plaque says \cRival{\MYname{}}.  If you have the room key with badge number 105, you may enter the room.}
+  \s\MYitems {\iBible}
+  }
+ 
+%% The Kitchen
+\NEW{Sign}{\sMortarAndPestle}{
+  \s\MYname	{A Mortar and Pestle}
+  \s\MYloc	{- 002}
+  \s\MYtext	{A Mortar and Pestle are lying on the counter. You may not interact with this sign unless you know otherwise.}
+  \s\MYitems {\iPoisonedWine{}}
+  }
+  
+\NEW{Sign}{\sRefrigerator}{
+  \s\MYname	{Refrigerator}
+  \s\MYloc	{- 002}
+  \s\MYtext	{A big, industrial sized refrigerator. If you would like to search the refrigerator, place both hands on this sign for 30 seconds. Note: The items available here are effectively infinate in quantity. If this envelope is ever empty, tell a GM.}
+  \s\MYitems {\multi{5}{\iMagnet{}} %% How do I get multiple magnets? is there a better way?
+  }
+
+\NEW{Sign}{\sKitchenSink}{
+  \s\MYname	{The Kitchen Sink}
+  \s\MYloc	{- 002}
+  \s\MYtext	{A big, stainless steel sink. A good place to wash your hands. If you would like to search the sink, place both hands on this sign for 30 seconds.Note: The items available here are effectively infinate in quantity. If this envelope is ever empty, tell a GM.}
+  \s\MYitems {\multi{5}{\iSteelWool{}} %% How do I get multiple magnets? is there a better way?
+  }
+  
+\NEW{Sign}{\sKitchenCabinet}{
+  \s\MYname	{A Kitchen Cabinet}
+  \s\MYloc	{- 002}
+  \s\MYtext	{Full of all kinds of useful cooking implements. If you would like to search the sink, place both hands on this sign for 30 seconds.Note: The items available here are effectively infinate in quantity. If this envelope is ever empty, tell a GM.}
+  \s\MYitems {\multi{5}{\iPastaStrainer{}} %% How do I get multiple magnets? is there a better way?
+  }
+  
+%% The Bar
+
+\NEW{Sign}{\sBarCounter}{
+  \s\MYname	{The Bar}
+  \s\MYloc	{- 002}
+  \s\MYtext	{Normally there would be a bartender here, mixing drinks. If you would like to search behind the counter, place both hands on this sign for 30 seconds.}
+  \s\MYitems {\multi{10}{\iWine{}\multi{5}\iVial{}} %% How do I get multiple magnets? is there a better way?
+  }
+  
+%% NEED THE TV and to associate the items (which haven't been built yet)
