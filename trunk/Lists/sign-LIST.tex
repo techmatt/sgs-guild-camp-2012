@@ -256,10 +256,24 @@ Once you have completed one of the above requirements, you may stand with your h
 %%The flower pot anomoly!
 
 %%REALITY
+\NEW{Sign}{\sHallwayBlocked}{
+  \s\MYname	{YOU MAY NOT PASS THIS SIGN UNLESS YOU KNOW OTHERWISE}
+  \s\MYloc	{-015}
+  \s\MYtext	{\#9999}
+  }
+
 \NEW{Sign}{\sPossessABody}{
   \s\MYname	{How to Possess A Body}
   \s\MYloc	{-015}
-  \s\MYtext	{If your badge number is anything other than {\bf \cPassive{\s\MYnumber{}}} or {\bf \cActive{\sMYnumber{}}}, take one of the index cards below to represent your robot body while you are here. If there are no more index cards available, there is no body for your mind to transfer into, and you are returned to the simulation.}
+  \s\MYtext	{If your badge number is anything other than {\bf \cPassive{\s\MYnumber{}}} or {\bf \cActive{\sMYnumber{}}}, take one of the index cards below to represent your robot body while you are here. If there are no more index cards available, there is no body for your mind to transfer into, and you are returned to the simulation. (You fail to gain access to this room. Return to game space beyond the blue tape barrier).} %% We will tape 3 notecards to the door below this sign
+  }
+
+\NEW{Sign}{\sAlienBodies}{
+  \s\MYname	{A Pair of alien bodies}
+  \s\MYloc	{-015}
+  \s\MYtext	{There are two bodies seated cross legged on the floor, with their eyes closed as if asleep. You have never seen bodies like these before. They must be aliens.
+  
+  If there is a notecard below this sign, you may attempt to kill one of the bodies if you choose. If you do so, you must inform a GM before you begin. The action takes 5 minutes, and is interruptable. If you succeed in killing the body, tear up one of the notecards. If there are no notecards, both bodies have been killed.}  %% We will tape 2 notecards to the wall below this sign
   }
 
 \NEW{Sign}{\sReturnToSim}{
