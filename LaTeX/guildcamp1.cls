@@ -14,6 +14,10 @@
 %%
 %%%%%
 
+% Peter added the following to help with debugging:
+\errorcontextlines=10
+\tracingmacros=1
+\tracingcommands=1
 
 %%%%%
 %% \gameclassname
