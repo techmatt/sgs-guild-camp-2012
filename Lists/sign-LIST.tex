@@ -138,38 +138,50 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %% The hotel rooms
+\NEW{Sign}{\sHotelRooms}{
+  \s\MYname	{Hotel Room Access}
+  \s\MYloc	{- 004}
+  \s\MYtext	{There are two ways to gain entrance to a hotel room unless you know otherwise:
+
+{\bf 1. } Possess the appropriate room key.
+
+{\bf 2. } You may hit the door with a {\bf CR of 5} or greater.
+
+Once you have completed one of the above requirements, you may stand with your hand on the room sign for 30 seconds to enter the room. You may then freely stash items that are stashable, and take items that are in the room.}
+  }
+
 \NEW{Sign}{\sBrideRoom}{
   \s\MYname	{\cBride{\MYname{}}'s Hotel Room}
   \s\MYloc	{- 004}
-  \s\MYtext	{The nameplaque says \cBride{\MYname{}}. If you have the room key with badge number 100, you may enter the room.}
+  \s\MYtext	{The nameplaque says {\bf \cBride{\MYname{}}}. If you have the room key with item {\bf \# 100}, you may enter the room.}
   \s\MYitems {\iBible{}}
   }
   
 \NEW{Sign}{\sGroomRoom}{
   \s\MYname	{\cGroomA{\MYname{}}'s Hotel Room}
   \s\MYloc	{- 004}
-  \s\MYtext	{The name plaque says \cGroom{\MYname{}}. If you have the room key with badge number 101, you may enter the room.}
+  \s\MYtext	{The name plaque says {\bf \cGroom{\MYname{}}}. If you have the room key with item {\bf \# 101}, you may enter the room.}
   \s\MYitems {\iBible{}}
   } 
   
 \NEW{Sign}{\sScientistRoom}{
   \s\MYname	{\cScientist{\MYname{}}'s Hotel Room}
   \s\MYloc	{- 004}
-  \s\MYtext	{The name plaque says \cScientist{\MYname{}}. Below it is another name plaque that says \cKid{\Myname{}}. If you have the room key with badge number 102 or 103, you may enter the room.}
+  \s\MYtext	{The name plaque says {\bf \cScientist{\MYname{}}}. Below it is another name plaque that says {\bf \cKid{\Myname{}}}. If you have the room key with item {\bf \# 102 or 103}, you may enter the room.}
   \s\MYitems {\iBible{}\iBall{}}
   }
   
 \NEW{Sign}{\sRivalRoom}{
   \s\MYname	{\cRival{\MYname{}}'s Hotel Room}
   \s\MYloc	{- 004}
-  \s\MYtext	{The name plaque says \cRival{\MYname{}}.  If you have the room key with badge number 104, you may enter the room.}
+  \s\MYtext	{The name plaque says {\bf \cRival{\MYname{}}}.  If you have the room key with item {\bf \# 104}, you may enter the room.}
   \s\MYitems {\iBible{}}
   }
   
 \NEW{Sign}{\sPastorRoom}{
-  \s\MYname	{\cRival{\MYname{}}'s Hotel Room}
+  \s\MYname	{\cPastor{\MYname{}}'s Hotel Room}
   \s\MYloc	{- 004}
-  \s\MYtext	{The name plaque says \cRival{\MYname{}}.  If you have the room key with badge number 105, you may enter the room.}
+  \s\MYtext	{The name plaque says {\bf \cPastor{\MYname{}}}.  If you have the room key with item {\bf \# 105}, you may enter the room.}
   \s\MYitems {\iBible{}}
   }
  
@@ -191,15 +203,15 @@
 \NEW{Sign}{\sKitchenSink}{
   \s\MYname	{The Kitchen Sink}
   \s\MYloc	{- 002}
-  \s\MYtext	{A big, stainless steel sink. A good place to wash your hands. If you would like to search the sink, place both hands on this sign for 30 seconds.Note: The items available here are effectively infinate in quantity. If this envelope is ever empty, tell a GM.}
+  \s\MYtext	{A big, stainless steel sink. A good place to wash your hands. If you would like to search the sink, place both hands on this sign for 30 seconds. Note: The items available here are effectively infinate in quantity. If this envelope is ever empty, tell a GM.}
   \s\MYitems {\multi{5}{\iSteelWool{}}} 
   }
   
 \NEW{Sign}{\sKitchenCabinet}{
   \s\MYname	{A Kitchen Cabinet}
   \s\MYloc	{- 002}
-  \s\MYtext	{Full of all kinds of useful cooking implements. If you would like to search the sink, place both hands on this sign for 30 seconds.Note: The items available here are effectively infinate in quantity. If this envelope is ever empty, tell a GM.}
-  \s\MYitems {\multi{5}{\iPastaStrainer{}}} 
+  \s\MYtext	{Full of all kinds of useful cooking implements. If you would like to search the cabinet, place both hands on this sign for 30 seconds. }
+  \s\MYitems {\multi{3}{\iPastaStrainer{}} \multi{3}{\iKnife{}}} 
   }
   
 %% The Bar
@@ -217,8 +229,15 @@
 \NEW{Sign}{\sToolbox}{
   \s\MYname	{A Toolbox}
   \s\MYloc	{Hall off of - 002}
-  \s\MYtext	{If you would like to search the toolbox, place a hand on this sign for 1 minute. You may then take 1 item of your choosing from the toolbox. Stashable items may also be stashed here.}
+  \s\MYtext	{If you would like to search the toolbox, place a hand on this sign for 1 minute. You may then take 1 item of your choosing from the toolbox.}
   \s\MYitems {\multi{3}{\iSolderingIron{}} }
+  }
+  
+\NEW{Sign}{\sPileOfWood}{
+  \s\MYname	{A Pile of Wood}
+  \s\MYloc	{Hall off of - 002}
+  \s\MYtext	{An assorted collection of wooden planks and boards. If you would like to search the pile, place a hand on this sign for 1 minute. You may then take 1 item of your choosing from the pile.}
+  \s\MYitems {\multi{3}{\iTwoByFour{}} 
   }
   
 %% The Lobby of the Hotel
@@ -227,6 +246,12 @@
   \s\MYloc	{Main Hallway}
   \s\MYtext	{Normally there would be someone staffing the desk.}
   }
+  
+\NEW{Sign}{\sPortrait}{
+  \s\MYname	{A Picture of the God of Virtuism}
+  \s\MYloc	{Main Hallway}
+  \s\MYtext	{A beautiful rendering of the image of the God of Virtuism.}
+  }
 
 %%The flower pot anomoly!
 
@@ -234,7 +259,7 @@
 \NEW{Sign}{\sGiftShop}{
   \s\MYname	{The Gift Shop}
   \s\MYloc	{-030}
-  \s\MYtext	{This is the gift shop for the hotel.}
+  \s\MYtext	{This is the gift shop for the hotel. It is small and mostly full of cheap junk}
   \s\MYitems {}
   }
 
@@ -242,5 +267,22 @@
   \s\MYname	{A Display in the Gift Shop}
   \s\MYloc	{-030}
   \s\MYtext	{There are many things on display. If you would like to take one, place your hand on the sign for 1 minute, then you may take an item of your choice.}
-  \s\MYitems {}
+  \s\MYitems {\iCrayons{}\iCrayons{}\iHairbrush{}\iHairbrush{}\multi{4}\iShoePolish{}}
   }
+  
+%% The High Security Door
+\NEW{Sign}{\sHighSecurityDoorLocked}{
+  \s\MYname	{A High Security Door}
+  \s\MYloc	{Near -013}
+  \s\MYtext	{This steel door looks important. It has a keyhole instead of a card reader. If you have item {\bf \# 125} you may open the door. Replace this sign with the one under it. You may then take any item from this room that you wish to take.}
+  \s\MYitems {\iMilitarySecret{}}
+  }
+
+\NEW{Sign}{\sHighSecurityDoorUnlocked}{
+  \s\MYname	{A High Security Door}
+  \s\MYloc	{Near -013}
+  \s\MYtext	{This steel door looks important. It has a keyhole instead of a card reader. If you have item {\bf \# 125} you may open the door. Replace this sign with the one under it. You may then take any item from this room that you wish to take.}
+  \s\MYitems {\iMilitarySecret{}}
+  }
+
+%% Broom Closet

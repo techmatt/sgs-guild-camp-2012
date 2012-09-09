@@ -216,6 +216,14 @@
   \s\MYtext	{It's just a card key. Don't get it mixed up with someone else's!}
   }
   
+%%Items that individuals start with
+
+\NEW{Item}{\iHighSecurityKey}{
+  \s\MYname	{A big metal key}
+  \s\MYnumber	{0125}
+  \s\MYtext	{This key looks important}
+  }
+  
 %% Kitchen items
 
 \NEW{ItemFold}{\iPoisonedWine}{
@@ -242,6 +250,12 @@
   \s\MYtext	{Useful for making pasta.}
   }
   
+\NEW{Item}{\iKnife}{
+  \s\MYname	{A Kitchen Knife}
+  \s\MYnumber {0114}
+  \s\MYtext	{A sharp chef's knife. Appropriate for chopping vegetables. {\bf Edged}}
+  }
+  
 %% The Bar Items
 \NEW{ItemFold}{\iWine}{
   \s\MYname	{A glass of wine}
@@ -264,6 +278,12 @@
   \s\MYtext	{Good for fine, delicate work with electronics.}
   }
   
+\NEW{Item}{\iTwoByFour}{
+  \s\MYname	{A piece of 2x4}
+  \s\MYnumber {0121}
+  \s\MYtext	{A long stick of wood. It feels very solid. {\bf Blunt}.}
+  }
+  
 %% The Lobby
 %%The only item is glitched pot
 
@@ -276,7 +296,28 @@
 %%The Gift Shop
 \NEW{Item}{\iCrayons}{
   \s\MYname	{A small box of crayons}
-  \s\MYnumber {0123}
+  \s\MYnumber {0143}
   \s\MYtext	{Just 12 colors.}
+  }
+  
+\NEW{Item}{\iHairbrush}{
+  \s\MYname	{A Hairbrush}
+  \s\MYnumber {0145}
+  \s\MYtext	{A simple hairbrush.}
+  }
+  
+\NEW{Item}{\iShoePolish}{
+  \s\MYname	{A tin of Shoe Polish}
+  \s\MYnumber {0147}
+  \s\MYtext	{A small tin of black shoe polish.}
+  }
+  
+%% The High Security Door
+
+\NEW{ItemPacket}{\iMilitarySecret}{
+  \s\MYname	{Top Secret}
+  \s\MYnumber	{150}
+  \s\MYtext	{This file folder is stamped with a red \"Top Secret\"'}
+  \s\MYcontents	{There are a number of important looking blueprints in the file.  They look like they might be schematics to the military bases. There is also a sheet of launch codes. If these fell into the wrong hands{\ldots}}
   }
   
