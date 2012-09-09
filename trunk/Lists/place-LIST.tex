@@ -18,6 +18,8 @@
 %%
 %%%%%
 
+\errorcontextlines=10
+
 \DECLARESUBTYPE{Place}{Owner}
 \PRESETS{Place}{
   \FD\MYwhere	{} %% if a Place is a single identifiable location
@@ -46,26 +48,21 @@
 
 \NEW{Place}{\pRoomfour}{
   \s\MYname	{Room -004}
-  \s\MYsigns	{\sBrideRoom{}}
-  \s\MYsigns {\sGroomRoom{}}
-  \s\MYsigns {\sScientistRoom{}}
-  \s\MYsigns {\sRivalRoom{}}
-  \s\MYsigns {\sPastorRoom{}}
-  \s\MYsigns {\sHotelRooms{}}
+  \s\MYsigns	{\sBrideRoom{}\sGroomRoom{}\sScientistRoom{}\sRivalRoom{}\sPastorRoom{}}
   }
   
-\NEW{Place}{\pKitchen}{
-  \s\MYname	{Room -002}
-  \s\MYsigns	{\sMortarAndPestle{}}
-  \s\MYsigns	{\sRefrigerator{}}
-  \s\MYsigns	{\sKitchenSink{}}
-  \s\MYsigns	{\sKitchenCabinet{}}
-  \s\MYitems	{}
-  }
+
+ \NEW{Place}{\pKitchen}{
+   \s\MYname	{Room -002}
+   \s\MYsigns	{\sMortarAndPestle{}\sRefrigerator{}\sKitchenSink{}\sKitchenCabinet{}}
+   \s\MYitems	{}
+   }
   
 \NEW{Place}{\pBar}{
   \s\MYname	{Room -002}
-  \s\MYsigns	{\sCounter{}}
+  %\s\MYsigns	{\sCounter{}}
+  % TODO
+  \s\MYsigns	{}
   %%THE TV needs to go here!
   \s\MYitems	{}
   }

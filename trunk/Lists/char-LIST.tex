@@ -49,6 +49,7 @@
 %%%%%
 
 
+
 %%%%%
 %% If a field is declared by \F, it must be given a value by \s inside
 %% \NEW, even if it's blank.  If you want it to be optional, declare
@@ -195,8 +196,11 @@
    \s\MYfile	{Bride.tex}
    \s\MYnumber	{224}
    
-  \s\MYblues	{\bProphecy{}}
-  \s\MYgreens	{\gVirus{}\gPrepareWedding{}\gWedding{}}
+%  \s\MYblues	{\bProphecy{}}
+  \s\MYblues	{}
+%  \s\MYgreens	{\gVirus{}\gPrepareWedding{}\gWedding{}}
+%TODO
+  \s\MYgreens	{}
   \s\MYabils	{}
   \s\MYitems	{\iBrideKey{}}
  }
@@ -231,7 +235,7 @@
   \s\MYblues	{}
   \s\MYgreens	{\gVirus{}}
   \s\MYabils	{\aPickPocket{}}
-  \s\MYitems	{\iKidKey{}\iTeddyBear}
+  \s\MYitems	{\iKidKey{}\iTeddyBear{}}
  }
 
 \NEW{PC}{\cPassive}{
@@ -274,7 +278,7 @@
    
   \s\MYblues	{\bProphecy{}}
   \s\MYgreens	{\gVirus{}\gPrepareWedding{}\gWedding{}}
-  \s\MYabils	{\aReKey{}}
+  \s\MYabils	{\aRekey{}}
   \s\MYitems	{\iRivalKey{}}
  }
  
@@ -285,7 +289,7 @@
    
   \s\MYblues	{}
   \s\MYgreens	{\gVirus{}}
-  \s\MYabils	{\aReKey{}}
+  \s\MYabils	{\aRekey{}}
   \s\MYitems	{\iScientistKey{}}
  }
  
