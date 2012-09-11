@@ -193,7 +193,7 @@
   \s\MYabils	{}
   \s\MYitems	{}
   \s\MYomega	{12} % Corruption
-\s\MYmems {\mVirus{}}
+\s\MYmems {\mVirus{}\mDead{}}
  }
  
 \NEW{PC}{\cBride}{
@@ -207,7 +207,7 @@
   \s\MYabils	{}
   \s\MYitems	{\iBrideKey{}}
    \s\MYomega	{12} % Corruption
-\s\MYmems {\mVirus{}}
+\s\MYmems {\mVirus{}\mGod{}\mHotAlien{}\mDead{}}
 
  }
 
@@ -222,7 +222,7 @@
   \s\MYabils	{}
   \s\MYitems	{\iGroomKey{}}
   \s\MYomega	{8} % Corruption
- \s\MYmems {\mVirus{}}
+ \s\MYmems {\mVirus{}\mGod{}\mDead{}}
 }
  
 \NEW{PC}{\cGroomB}{
@@ -236,7 +236,7 @@
   \s\MYabils	{}
   \s\MYitems	{\iGroomKey{}}
   \s\MYomega	{8} % Corruption
-\s\MYmems {\mVirus{}}
+\s\MYmems {\mVirus{}\mGod{}\mDead{}}
  }
 
 \NEW{PC}{\cKid}{
@@ -250,7 +250,7 @@
   \s\MYabils	{\aPickPocket{}}
   \s\MYitems	{\iKidKey{}\iTeddyBear{}}
   \s\MYomega	{12} % Corruption
- \s\MYmems {\mVirus{}}
+ \s\MYmems {\mVirus{}\mDead{}}
 }
 
 \NEW{PC}{\cPassive}{
@@ -264,11 +264,11 @@
   \s\MYabils	{}
   \s\MYitems	{}
   \s\MYomega	{12} % Corruption
- \s\MYmems {\mVirus{}}
+ \s\MYmems {\mVirus{}\mDead{}}
 }
  
 \NEW{PC}{\cPastor}{
-   \s\MYname	{Reverend Cornelius}
+   \s\MYname	{Reverend \pre Cornelius}
    \s\MYfile	{Pastor.tex}
    \s\MYsex      {\male}
    \s\MYnumber	{535}
@@ -278,7 +278,7 @@
   \s\MYabils	{}
   \s\MYitems	{\iPastorKey{}\iHighSecurityKey{}}
   \s\MYomega	{12} % Corruption
-\s\MYmems {\mVirus{}}
+\s\MYmems {\mVirus{}\mGod{}\mDead{}}
  }
 
 \NEW{PC}{\cProgrammer}{
@@ -292,7 +292,7 @@
   \s\MYabils	{}
   \s\MYitems	{}
   \s\MYomega	{20} % Corruption
-\s\MYmems {\mVirus{}}
+\s\MYmems {\mVirus{}\mDead{}}
  }
  
 \NEW{PC}{\cRival}{
@@ -306,7 +306,7 @@
   \s\MYabils	{\aRekey{}}
   \s\MYitems	{\iRivalKey{}}
   \s\MYomega	{12} % Corruption
-\s\MYmems {\mVirus{}}
+\s\MYmems {\mVirus{}}{\mGod{}\mDead{}}
  }
  
 \NEW{PC}{\cScientist}{
@@ -320,7 +320,7 @@
   \s\MYabils	{\aRekey{}}
   \s\MYitems	{\iScientistKey{}}
   \s\MYomega	{12} % Corruption
-\s\MYmems {\mVirus{}}
+\s\MYmems {\mVirus{}\mDead{}}
  }
  
 %\NEW{Name}{\cSomeGuy}{
@@ -332,6 +332,11 @@
 \NEW{Name}{\cRivalEx}{
   \s\MYname    {Sir \pre Robert Not-Appearing}
   \s\MYsex      {\female}
+}
+
+\NEW{Name}{\cGod}{
+  \s\MYname    {Markrox}
+  \s\MYsex      {\male}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
