@@ -9,8 +9,6 @@ Give aliens a mechanic to find each other.
 
 Rekey should be sketchy: decking mechanic?
 
-Omega should 
-
 Active Alien:	Goals should be summary, not explanation
 (same for	Should have a mechanic or research notebook.
 Passive)	Ability/item to create blood samples.
