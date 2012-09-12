@@ -161,7 +161,7 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYname	{A Hotel Room}
   \s\MYloc	{- 004}
   \s\MYtext	{The name plaque says {\bf \cGroomA{\MYname{}}}. If you have the room key with item {\bf \# 101}, you may enter the room.}
-  \s\MYitems {\iBible{}}
+  \s\MYitems {\iBible{}\imac{}}
   } 
   
 \NEW{Sign}{\sScientistRoom}{
@@ -175,14 +175,14 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYname	{A Hotel Room}
   \s\MYloc	{- 004}
   \s\MYtext	{The name plaque says {\bf \cRival{\MYname{}}}.  If you have the room key with item {\bf \# 104}, you may enter the room.}
-  \s\MYitems {\iBible{}}
+  \s\MYitems {\iBible{}\iWidget{}}
   }
   
 \NEW{Sign}{\sPastorRoom}{
   \s\MYname	{A Hotel Room}
   \s\MYloc	{- 004}
   \s\MYtext	{The name plaque says {\bf \cPastor{\MYname{}}}.  If you have the room key with item {\bf \# 105}, you may enter the room.}
-  \s\MYitems {\iBible{}}
+  \s\MYitems {\iBible{}\isyringe{}}
   }
  
 %% The Kitchen
@@ -223,14 +223,26 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYitems {\multi{10}{\iWine{}}\multi{7}{\iVial{}}} 
   }
   
-%% NEED THE TV and to associate the items [solenoid, whatever else, see the escape mechanic] (which haven't been built yet)
+\NEW{Sign}{\sTV}{
+  \s\MYname	{An old-fashioned television}
+  \s\MYloc	{- 002}
+  \s\MYtext	{Oh, the TV is playing. Yet the switch seems to indicate that it’s turned off…?
+
+If you watch it for a moment, it’s clear that the same two ads are playing, over and over.
+
+Buy Nibbles n’ Kits dog food! Buy Peach Laundry Detergent! Buy Nibbles n’ Kits dog food! Buy Peach Laundry Detergent! Buy Nibbles n’ Kits dog food! Buy Peach Laundry Detergent! Buy Nibbles n’ Kits dog food! Buy Peach Laundry Detergent! Buy Nibbles n’ Kits dog food! Buy Peach Laundry Detergent! Buy Nibbles n’ Kits dog food! Buy Peach Laundry Detergent!
+  
+ This television may be opened up if you spend one minute doing so. If so, remove an item below. }
+  \s\MYitems {\iSolenoid{}}
+  }
+  %% THIS IS A GLITCH ITEM and it needs a star sticker
 
 %%The construction site
 \NEW{Sign}{\sToolbox}{
   \s\MYname	{A Toolbox}
   \s\MYloc	{Hall off of - 002}
   \s\MYtext	{If you would like to search the toolbox, place a hand on this sign for 1 minute. You may then take 1 item of your choosing from the toolbox.}
-  \s\MYitems {\multi{3}{\iSolderingIron{}} }
+  \s\MYitems {\multi{3}{\iSolderingIron{}}\iWidget{} }
   }
   
 \NEW{Sign}{\sPileOfWood}{
@@ -239,6 +251,19 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYtext	{An assorted collection of wooden planks and boards. If you would like to search the pile, place a hand on this sign for 1 minute. You may then take 1 item of your choosing from the pile.}
   \s\MYitems {\multi{3}{\iTwoByFour{}} }
   }
+
+\NEW{Sign}{\sWater}{
+  \s\MYname	{A Block of Water}
+  \s\MYloc	{Blocking hall off of - 002}
+  \s\MYtext	{There appears to be a floating aquarium in the middle of this hallway, blocking most of the passage. It is possible to squeeze by next to the wall if you’re careful.
+
+But on closer inspection, this aquarium lacks glass. It is simply a cube of water, held in the shape of a cube by god-knows-what, with a single, very confused fish swimming around haphazardly inside.
+
+If you have a strainer-like device and make a CR 2 attack, you can catch the fish. Open the packet below.}
+  \s\MYitems {\iFish{} }
+  }
+%% THIS IS A GLITCH ITEM and it needs a star sticker
+%% Also, accompany this with an outline in masking tape on the ground
   
 %% The Lobby of the Hotel
 \NEW{Sign}{\sReception}{
@@ -253,7 +278,15 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYtext	{A beautiful rendering of the image of the God of Virtuism.}
   }
 
-%%The flower pot anomoly!
+\NEW{Sign}{\sFlowers}{
+  \s\MYname	{A Vase of Flowers}
+  \s\MYloc	{Main Hallway}
+  \s\MYtext	{What a lovely flower arrangement! This would look quite nice at the wedding.
+ 
+  If you get close, you can hear a strange static noise coming from the vase. What could be making that sound? It’s grating.}
+  \s\MYitems {\multi{10}{\i{Flowers{}} }
+  }
+  %% THIS IS A GLITCH ITEM and it needs a star sticker
 
 %%REALITY
 \NEW{Sign}{\sHallwayBlocked}{
@@ -271,7 +304,7 @@ Once you have completed one of the above requirements, you may stand with your h
 \NEW{Sign}{\sAlienBodies}{
   \s\MYname	{A Pair of alien bodies}
   \s\MYloc	{-015}
-  \s\MYtext	{There are two bodies seated cross legged on the floor, with their eyes closed as if asleep. You have never seen bodies like these before. They must be aliens.
+  \s\MYtext	{There are the bodies of two strange beings seated cross legged on the floor, with their eyes closed as if asleep. You have never seen anything like these before.
   
   If there is a notecard below this sign, you may attempt to kill one of the bodies if you choose. If you do so, you must inform a GM before you begin. The action takes 5 minutes, and is interruptable. If you succeed in killing the body, tear up one of the notecards. If there are no notecards, both bodies have been killed.}  %% We will tape 2 notecards to the wall below this sign
   }
@@ -319,9 +352,9 @@ Once you have completed one of the above requirements, you may stand with your h
   }
 
 \NEW{Sign}{\sRope}{
-  \s\MYname	{A coil of rope}
+  \s\MYname	{A coil of cable}
   \s\MYloc	{-015}
-  \s\MYtext	{There is a long coil of rope in this corner. It can't be moved very far, but two players may use it to restrain a third. The two players wishing to use the rope must each put one hand on this sheet and then indicate the player to be restrained. The restrained player must comply, but is immediately released should either restraining player remove their hand from this sheet. This item has a 2 minute cool down time while you untangle the rope after a player is released (intentionally or accidentally).}
+  \s\MYtext	{There is a long coil of steel cable in this corner. It can't be moved very far, but two players may use it to restrain a third. The two players wishing to use the rope must each put one hand on this sheet and then indicate the player to be restrained. The restrained player must comply, but is immediately released should either restraining player remove their hand from this sheet. This item has a 2 minute cool down time while you untangle the rope after a player is released (intentionally or accidentally).}
   }         
   
 
@@ -341,11 +374,22 @@ Once you have completed one of the above requirements, you may stand with your h
   }
   
 \NEW{Sign}{\sGiftShopStuffies}{
-  \s\MYname	{A Display of stuffed animals}
+  \s\MYname	{A display of stuffed animals}
   \s\MYloc	{-030}
   \s\MYtext	{There are a whole host of stuffed animals on display here. If you would like to search the pile of stuffed animals, place your hand on the sign for 1 minute, then you may take an item if one is available.}
   \s\MYitems {\iBunnyRabbit{}}%%A GM will put the item into the envelope when the utopia state appears in game
   }
+  
+  \NEW{Sign}{\sGiftShopWindow}{
+  \s\MYname	{A clothing display.}
+  \s\MYloc	{-030}
+  \s\MYtext	{This trendy boutique is selling some chic skirts and suits! Look, matching purses and wallets!
+
+Wait a minute… what color is the fabric? It’s not one you’ve ever seen before. You’re not sure you can describe it.}
+  \s\MYitems {\iClothes}}
+  }
+ %% THIS IS A GLITCH ITEM and it needs a star sticker
+
   
 %% The High Security Door
 \NEW{Sign}{\sHighSecurityDoorLocked}{
@@ -374,7 +418,7 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYname	{A Pile of Junk}
   \s\MYloc	{-032}
   \s\MYtext	{There is a pile of junk here. If you would like search the pile of junk for a useful item, spend 3 minutes searching this room. You may then take one item randomly.}
-  \s\MYitems {}%%need the widget in here.
+  \s\MYitems {\iWidget{}\multi{4}{\iwire{}}\iBible{}}
   }
   
 %% The ballroom
@@ -384,5 +428,18 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYtext	{This is the Grand Ballroom for the hotel. The floors are a rich, grainy red wood.  The walls are covered in gilded wallpaper and the sweeping, the vaulted ceilings are graced by elaborate chandeliers. 
   
   The wedding is scheduled to take place here this evening.}
-  \s\MYitems {}%%need the widget in here.
+  \s\MYitems {}
   }
+  
+  %% Spa
+\NEW{Sign}{\sSpa}{
+  \s\MYname	{A Spa}
+  \s\MYloc	{-032}
+  \s\MYtext	{This was a fancy Spa, but something's wrong.
+  
+ Everything in this room seems to be sprouting leaves. Even the plastic and metal furniture is sprouting plastic and metal foliage.
+
+For every 30 seconds spent in this room, lower your Ω by 1.}
+  \s\MYitems {}
+  }
+ %% THIS IS A GLITCH ITEM and it needs a star sticker
