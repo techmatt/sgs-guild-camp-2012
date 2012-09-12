@@ -177,7 +177,13 @@
   \s\MYname	{A small ball}
   \s\MYnumber {0124}
   \s\MYtext	{Perfect for playing catch with someone special.}
-  }
+  }%%this goes in the Scientist's room
+
+\NEW{Item}{\isyringe}{
+  \s\MYname	{A syringe}
+  \s\MYnumber {0124}
+  \s\MYtext	{A syringe. Looks like it's been used.}
+  }%% This goes in the Pastor's room
   
   \NEW{ItemFold}{\imac}{
   \s\MYname	{A laptop}
@@ -185,7 +191,7 @@
   \bulky{1}
   \s\MYtext	{An expensive personal computer. Can be broken with an attack, opening the packet beneath.}
    \s\MYcontents{ Cross out the "Laptop" card and make a nonbulky 'Processor' item card.}
-  }
+  }%% This goes in the Grooms' room
 
 %% Keys to the rooms!
 \NEW{Item}{\iBrideKey}{
@@ -322,13 +328,11 @@
   \s\MYtext	{A tiny vial.}
   }
 
-\NEW{ItemFold}{\iTV}{
-  \s\MYname	{A television set.}
+\NEW{Item}{\iSolenoid}{
+  \s\MYname	{Solenoid}
   \s\MYnumber {0146}
-  \bulky{2}
-  \s\MYtext	{An old-fashioned television. It can be broken apart with an attack, at which point you may open the envelope below.}
-   \s\MYcontents{Cross out the 'Television' card and make a "Solenoid" item card of 1 hand bulky.}
-
+  \bulky{1}
+  \s\MYtext	{An intricate-looking piece of machinery.}
   }
   
 %% The Construction Site Items
@@ -347,11 +351,6 @@
   \s\MYtext	{A long stick of wood. It feels very solid. {\bf Blunt}.}
   }
   
-  \NEW{Item}{\iwire}{
-  \s\MYname	{Coper wire}
-  \s\MYnumber {0116}
-  \s\MYtext	{A small spool copper wire.}
-  }
 
   
 %% The Lobby
@@ -365,12 +364,6 @@
 %% The Spa is an anomoly and has no unique items
 
 %% Reality
-\NEW{Item}{\iCable}{
-  \s\MYname	{A metal cable}
-  \s\MYnumber {0149}
-  \bulky{1}
-  \s\MYtext	{This is a strong cable and could restrain even a robot.}
-  }
 
 %%The Gift Shop
 \NEW{Item}{\iCrayons}{
@@ -404,6 +397,14 @@
   \s\MYtext	{A bright red lobster stuffed animal.}
   }
   
+  %% The Broom Closet
+  
+    \NEW{Item}{\iwire}{
+  \s\MYname	{Coper wire}
+  \s\MYnumber {0116}
+  \s\MYtext	{A small spool copper wire.}
+  }
+  
 %% The High Security Door
 
 \NEW{ItemPacket}{\iMilitarySecret}{
@@ -427,5 +428,5 @@
   \NEW{Item}{\iWidget}{
   \s\MYname	{Trojan Dewormer}
   \s\MYnumber	{0111}
-  \s\MYtext	{A bizarre-looking probelike device.}
-  } %% One in Construction site, one in Spa, one in Gift Shop, and one in Rival's hotel room.
+  \s\MYtext	{A small point of light, like a lens flare. You cannot touch it, move it, or interact with it unless you know otherwise.}
+  } %% One in Construction site, one in Spa, one in Respawn closet, and one in Rival's hotel room.
