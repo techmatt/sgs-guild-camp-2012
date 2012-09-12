@@ -178,6 +178,14 @@
   \s\MYnumber {0124}
   \s\MYtext	{Perfect for playing catch with someone special.}
   }
+  
+  \NEW{ItemFold}{\imac}{
+  \s\MYname	{A laptop}
+  \s\MYnumber {0132}
+  \bulky{1}
+  \s\MYtext	{An expensive personal computer. Can be broken with an attack, opening the packet beneath.}
+   \s\MYcontents{ Cross out the "Laptop" card and make a nonbulky 'Processor' item card.}
+  }
 
 %% Keys to the rooms!
 \NEW{Item}{\iBrideKey}{
@@ -229,9 +237,41 @@
   \s\MYnumber	{0126}
     \bulky{1}
   \s\MYtext	{A soft, huggable teddy bear. You may open the packet if you hold the bear for 5 minutes}
- \s\MYcontents	{Your $\Omega$ cannot be }
+ \s\MYcontents	{Your $\Omega$ -score cannot be lowered so long as you possess this item.}
 }
+
+\NEW{Item}{\iSciNotes}{
+  \s\MYname	{A sheet of notes, hastily scribbled}
+  \s\MYnumber	{0127}
+  \s\MYtext	{This sheet details how one might complete the Mental Amplifier using household materials: a \bf{Solenoid} (often found in television sets), some \bf{copper wire}, and some \bf{steel wool}}
+  }
   
+  \NEW{Item}{\iRivalNotes}{
+  \s\MYname	{A sheet of notes, hastily scribbled}
+  \s\MYnumber	{0128}
+  \s\MYtext	{This sheet details how one might complete the Portable MRI using household materials: a \bf{Processor} (often found in personal laptops), a \bf{magnet}, and a \bf{soldering iron}.}
+  }
+  
+  \NEW{Item}{\iRing}{
+  \s\MYname	{Wedding Ring}
+  \s\MYnumber	{0129}
+  \s\MYtext	{A beautiful ring featuring a large ruby set in the center.}
+  }
+  
+  \NEW{Item}{\imental}{
+  \s\MYname	{Incomplete Mental Amplifier}
+  \s\MYnumber	{0123}
+  \bulky{1}
+  \s\MYtext	{An intricate piece of machinery, sadly incomplete.}
+  }
+ 
+  \NEW{Item}{\imri}{
+  \s\MYname	{Incomplete Portable MRI}
+  \s\MYnumber	{0122}
+  \bulky{1}
+  \s\MYtext	{An intricate piece of machinery, sadly incomplete.}
+  }
+   
 %% Kitchen items
 
 \NEW{ItemFold}{\iPoisonedWine}{
@@ -282,10 +322,13 @@
   \s\MYtext	{A tiny vial.}
   }
 
-\NEW{Item}{\iTV}{
+\NEW{ItemFold}{\iTV}{
   \s\MYname	{A television set.}
   \s\MYnumber {0146}
-  \s\MYtext	{An old-fashioned television.}
+  \bulky{2}
+  \s\MYtext	{An old-fashioned television. It can be broken apart with an attack, at which point you may open the envelope below.}
+   \s\MYcontents{Cross out the 'Television' card and make a "Solenoid" item card of 1 hand bulky.}
+
   }
   
 %% The Construction Site Items
@@ -304,6 +347,13 @@
   \s\MYtext	{A long stick of wood. It feels very solid. {\bf Blunt}.}
   }
   
+  \NEW{Item}{\iwire}{
+  \s\MYname	{Coper wire}
+  \s\MYnumber {0116}
+  \s\MYtext	{A small spool copper wire.}
+  }
+
+  
 %% The Lobby
 \NEW{Item}{\iFlowers}{
   \s\MYname	{A lovely flower}
@@ -312,10 +362,15 @@
   }
   
 %% The Spa
-%% The Spa is an anomoly and has no items
+%% The Spa is an anomoly and has no unique items
 
 %% Reality
-%% NEED TO FIGURE THIS OUT
+\NEW{Item}{\iCable}{
+  \s\MYname	{A metal cable}
+  \s\MYnumber {0149}
+  \bulky{1}
+  \s\MYtext	{This is a strong cable and could restrain even a robot.}
+  }
 
 %%The Gift Shop
 \NEW{Item}{\iCrayons}{
@@ -326,7 +381,7 @@
 
 \NEW{Item}{\iClothes}{
   \s\MYname	{Clothes display}
-  \s\MYnumber {0143}
+  \s\MYnumber {0140}
   \s\MYtext	{A display of chic clothing and matching luggage.}
   }
   
