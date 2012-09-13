@@ -38,8 +38,8 @@
 %%
 %% Basic custom game information; gets used everywhere.  Don't put
 %% linebreaks in these and keep their lengths reasonable.
-\def\gamename{Test Game}
-\def\gamedate{Test Date}
+\def\gamename{Reality Check-In}
+\def\gamedate{September 14, 2012}
 
 
 %%%%%
@@ -50,7 +50,7 @@
 %% writing, \Final specifies that any \TODO commands remaining in the
 %% text of the game will not typeset any todo info (they will still
 %% output info to the terminal).
-\def\gamedraft{\Draft}
+\def\gamedraft{\Final}
 
 
 %%%%%
@@ -81,7 +81,7 @@
 %% Define \signdate as either \gamedate or \gamedateabbrev.  If you
 %% plan to leave signs up between different runs, \gamedate may be
 %% better.
-\def\takedownby{Testember Nth, 2001}
+\def\takedownby{September 15, 2012}
 \def\signdate{\gamedateabbrev}
 
 
