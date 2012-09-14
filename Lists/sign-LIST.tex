@@ -163,7 +163,7 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYname	{A Hotel Room}
   \s\MYloc	{- 004}
   \s\MYtext	{The name plaque says {\bf \cGroomA{\MYname{}}}. If you have the room key with item {\bf \# 101}, you may enter the room.}
-  \s\MYitems {\iBible{}\imac{}}
+  \s\MYitems {\iBible{}\imac{}\iDogtags{}}
   } 
   
 \NEW{Sign}{\sScientistRoom}{
@@ -193,9 +193,7 @@ Once you have completed one of the above requirements, you may stand with your h
 \NEW{Sign}{\sMortarAndPestle}{
   \s\MYname	{A Mortar and Pestle}
   \s\MYloc	{- 002}
-  \s\MYtext	{A Mortar and Pestle are lying on the counter.
-  
-  R}
+  \s\MYtext	{A Mortar and Pestle are lying on the counter.}  
   \s\MYitems {\iPoisonedWine{}}
   }
   
@@ -259,7 +257,7 @@ Buy Nibbles n’ Kits dog food! Buy Peach Laundry Detergent! Buy Nibbles n’ Kits d
   \s\MYtext	{An assorted collection of wooden planks and boards. If you would like to search the pile, place a hand on this sign for 1 minute. You may then take 1 item of your choosing from the pile.
   
   A}
-  \s\MYitems {\multi{3}{\iTwoByFour{}} }
+  \s\MYitems {\multi{3}{\iTwoByFour{}}\multi{3}{\iRope}}
   }
 
 \NEW{Sign}{\sWater}{
@@ -291,11 +289,12 @@ If you have a net-like device and make a CR 2 attack, you can catch the fish. Op
 \NEW{Sign}{\sFlowers}{
   \s\MYname	{A Vase of Flowers}
   \s\MYloc	{Main Hallway}
-  \s\MYtext	{What a lovely flower arrangement! This would look quite nice at the wedding.
+  \s\MYtext	{What a lovely flower arrangement! These would look quite nice at the wedding.
  
   If you get close, you can hear a strange static noise coming from the vase. What could be making that sound? It’s grating.}
   \s\MYitems {\multi{10}{\i{Flowers{}} }}
-  }
+  
+  R}
   %% THIS IS A GLITCH ITEM and it needs a star sticker
 
 %%REALITY
@@ -404,10 +403,10 @@ If you have a net-like device and make a CR 2 attack, you can catch the fish. Op
   \s\MYname	{A display of stuffed animals}
   \s\MYloc	{-030}
   \s\MYtext	{There are a whole host of stuffed animals on display here. If you would like to search the pile of stuffed animals, place your hand on the sign for 1 minute, then you may take an item if one is available.}
-  \s\MYitems {\iBunnyRabbit{}}%%A GM will put the item into the envelope when the utopia state appears in game
+  \s\MYitems {}%%A GM will put the item into the envelope when the utopia state appears in game
   }
   
-  \NEW{Sign}{\sGiftShopWindow}{
+\NEW{Sign}{\sGiftShopWindow}{
   \s\MYname	{A clothing display.}
   \s\MYloc	{-030}
   \s\MYtext	{This trendy boutique is selling some chic skirts and suits! Look, matching purses and wallets!
@@ -423,14 +422,14 @@ Wait a minute… what color is the fabric? It’s not one you’ve ever seen before. Y
   \s\MYname	{A High Security Door}
   \s\MYloc	{Near -013}
   \s\MYtext	{This steel door looks important. It has a keyhole instead of a card reader. If you have item {\bf \# 125} you may open the door. Replace this sign with the one under it (put this sign under that one). You may then take any item from this room that you wish to take.}
-  \s\MYitems {\iMilitarySecret{}}
+  \s\MYitems {}
   }
 
 \NEW{Sign}{\sHighSecurityDoorUnlocked}{
   \s\MYname	{A High Security Door}
   \s\MYloc	{Near -013}
   \s\MYtext	{This steel door looks important. It has been left open. You may close the door. If you do so, replace this sign with the one under it (put this sign under that one).}
-  \s\MYitems {}
+  \s\MYitems {\iMilitarySecret{}}
   }
 
 %% Broom Closet
@@ -445,7 +444,7 @@ Wait a minute… what color is the fabric? It’s not one you’ve ever seen before. Y
   \s\MYname	{A Pile of Junk}
   \s\MYloc	{-032}
   \s\MYtext	{There is a pile of junk here. If you would like search the pile of junk for a useful item, spend 3 minutes searching this room. You may then take one item randomly.}
-  \s\MYitems {\iWidget{}\multi{4}{\iwire{}}\iBible{}\multi{3}{\isyringe{}}}
+  \s\MYitems {\iWidget{}\multi{4}{\iwire{}}\iBible{}\multi{3}{\isyringe{}}\multi{3}{\iRope{}}}
   }
   
 %% The ballroom
@@ -471,6 +470,6 @@ Wait a minute… what color is the fabric? It’s not one you’ve ever seen before. Y
 For every 30 seconds spent in this room, lower your Ω by 1.
 
 B}
-  \s\MYitems {}
+  \s\MYitems {\iWidget{}}
   }
  %% THIS IS A GLITCH ITEM and it needs a star sticker
