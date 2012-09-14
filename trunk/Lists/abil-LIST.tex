@@ -46,13 +46,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\NEW{Abil}{\aDetectSavedState}{
-  \s\MYname	{Use Gieger Counter}
-  \s\MYtext	{You can use your Gieger Counter to detect if someone has been around radiation for the last few months.  If someone doesn't have a $\beta$ score, they are clean.  If they have a $\beta$ score of 1, they have been in the same residense as a radioactive item.  If they have a $\beta$ score of 2, they have been in close contact with a radioactive item.}
-  \s\MYeffect	{Tell me your $\beta$ score.} % TODO: add beta score=2 to child and beta score=1 to child's mother
-  }
-        
-
 
   
 %% Basic DarkWater-style Martial Attack abilities
@@ -88,7 +81,6 @@
 %% (in char-LIST.tex)
 \def\basecombat{\aKnockOut{}\aWound{}\aAssist{}}
 
-
 %% only some people have these
 \NEW{Abil}{\aDisarm}{
   \s\MYname	{Disarm}
@@ -108,7 +100,6 @@
   \s\MYeffect	{I restrain you.  You are restrained until I incant
 		``release.''}
   }
-
 \NEW{Abil}{\aThrow}{
   \s\MYname	{Throw}
   \s\MYtext	{You can throw someone as an attack.  Say ``\MYname'' and
@@ -116,6 +107,16 @@
   \s\MYeffect	{I throw you.  Go in the direction I point ten full steps
 		or until you hit a wall or similar.}
   }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\NEW{Abil}{\aDetectSavedState}{
+  \s\MYname	{Use Gieger Counter}
+  \s\MYtext	{You can use your Gieger Counter to detect if someone has been around radiation for the last few hours.  If someone doesn't have a $\beta$ score, they are clean.  If they have a $\beta$ score of 1, they have been close to the radioactive item for some time.  If they have a $\beta$ score of 2, they have been in close, likely continuous, contact with a radioactive item.}
+  \s\MYeffect	{Tell me your $\beta$ score.} % TODO: add beta score=2 to child and beta score=1 to child's mother
+  }
+     
+
   
   \NEW{Abil}{\aPickPocket}{
   \s\MYname	{Pick Pocket}
@@ -148,7 +149,7 @@
 
 \NEW{Abil}{\aDebug}{
   \s\MYname	{Debug}
-  \s\MYtext {You may increase someone's $\Omega$ score, but you must possess and destroy a Trojan dewormer to do so. You can also pick up Trojan dewormers.}
+  \s\MYtext {You may increase someone's $\Omega$ score by 5 points, or up to their maximum, whichever is smaller. To do so,you must possess and destroy a {\bf Trojan dewormer} to do so. Note: You can interact with and pick up Trojan dewormers.}
   \s\MYeffect {Gain 5 $\Omega$ up to your maximum.}
 }
 
@@ -161,7 +162,7 @@
 \NEW{Abil}{\aMentalDegradation}{
   \s\MYname	{Psych Lim: Mental Degradation}
   \s\MYtext	{Thirty minutes into the game, and every thirty minutes thereafter, lower your $\Omega$ score by 1.
-             Tear up this ability if you are in control of your real body.}
+            Ignore this ability if you are in control of your real body for the duration of time you are in your body.}
   \s\MYeffect	{My memory is deteriorating.}
   }
 
