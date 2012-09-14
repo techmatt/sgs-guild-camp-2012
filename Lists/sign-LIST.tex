@@ -147,7 +147,7 @@
 
 {\bf 2. } You may hit the door with a {\bf CR of 5} or greater.
 
-{\bf 3. } Hack your way in. The lock has a difficulty level of {\bf 1}.
+{\bf 3. } Hack your way in. The lock has a difficulty level of {\bf 1} unless the room belongs to \cScientist{\MYname{}}, in which case the lock has a difficulty level of {\bf 2}.
 
 Once you have completed one of the above requirements, you may stand with your hand on the room sign for 30 seconds to enter the room. You may then freely stash items that are stashable, and take items that are in the room.}
   }
@@ -170,7 +170,7 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYname	{A Hotel Room}
   \s\MYloc	{- 004}
   \s\MYtext	{The name plaque says {\bf \cScientist{\MYname{}}}. Below it is another name plaque that says {\bf \cKid{\MYname{}}}. If you have the room key with item {\bf \# 102 or 103}, you may enter the room.}
-  \s\MYitems {\iBible{}\iBall{}}
+  \s\MYitems {\iBible{}\iBall{}\iPaper{}}
   }
   
 \NEW{Sign}{\sRivalRoom}{
@@ -191,7 +191,7 @@ Once you have completed one of the above requirements, you may stand with your h
 \NEW{Sign}{\sMortarAndPestle}{
   \s\MYname	{A Mortar and Pestle}
   \s\MYloc	{- 002}
-  \s\MYtext	{A Mortar and Pestle are lying on the counter. You may not interact with this sign unless you know otherwise.}
+  \s\MYtext	{A Mortar and Pestle are lying on the counter.}
   \s\MYitems {\iPoisonedWine{}}
   }
   
@@ -222,7 +222,7 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYname	{The Bar}
   \s\MYloc	{- 002}
   \s\MYtext	{Normally there would be a bartender here, mixing drinks. If you would like to search behind the counter, place both hands on this sign for 30 seconds. You may then take 1 item from the counter.}
-  \s\MYitems {\multi{10}{\iWine{}}\multi{7}{\iVial{}}} 
+  \s\MYitems {\multi{10}{\iWine{}}\multi{10}{\iVial{}}} 
   }
   
 \NEW{Sign}{\sTV}{
@@ -261,7 +261,7 @@ Buy Nibbles n’ Kits dog food! Buy Peach Laundry Detergent! Buy Nibbles n’ Kits d
 
 But on closer inspection, this aquarium lacks glass. It is simply a cube of water, held in the shape of a cube by god-knows-what, with a single, very confused fish swimming around haphazardly inside.
 
-If you have a strainer-like device and make a CR 2 attack, you can catch the fish. Open the packet below.}
+If you have a net-like device and make a CR 2 attack, you can catch the fish. Open the packet below.}
   \s\MYitems {\iFish{} }
   }
 %% THIS IS A GLITCH ITEM and it needs a star sticker
@@ -306,9 +306,9 @@ If you have a strainer-like device and make a CR 2 attack, you can catch the fis
   
   Unless you know otherwise, you may not possess an alien body.
   
-  If you wish to destroy one of the alien bodies, you may do so. If you choose to do so, you must inform a GM before you begin. The action takes 5 minutes and is interruptable.  If you succeed in killing the body, tear up one of the notecards marked ``Alien''.
+  If you wish to destroy one of the alien bodies, you may do so once you have posessed a body of your own. If you choose to do so, you must inform a GM before you begin. The action takes 5 minutes and is interruptable. Pick up the notecard and do nothing else for 5 minutes. If anyone asks what you are doing, explain that you are attempting to destroy the body.  If you succeed in killing the body, tear up one of the notecards marked ``Alien''.
   
-  All bodies have CR 0.}
+  {\bf NOTE: All bodies have CR 0. This supercedes your CR.}}
   }
 
 \NEW{Sign}{\sAlienShip}{
@@ -326,7 +326,7 @@ If you have a strainer-like device and make a CR 2 attack, you can catch the fis
 \NEW{Sign}{\sReturnToSim}{
   \s\MYname	{How to return to simulation}
   \s\MYloc	{-015}
-  \s\MYtext	{If at any time you wish to return to the simulation, simply replace the index card representing your body where you found it, set your badge to ``I'm not here'' and return to the deck of cards. Then set your badge back.}
+  \s\MYtext	{If at any time you wish to return to the simulation, simply replace the index card representing your body where you found it, set your badge to ``I'm not here'' and return to where you used the dream machine (deck of cards). Then set your badge back.}
   }
 
 \NEW{Sign}{\sSimStateExplained}{
@@ -437,7 +437,7 @@ Wait a minute… what color is the fabric? It’s not one you’ve ever seen before. Y
   \s\MYname	{A Pile of Junk}
   \s\MYloc	{-032}
   \s\MYtext	{There is a pile of junk here. If you would like search the pile of junk for a useful item, spend 3 minutes searching this room. You may then take one item randomly.}
-  \s\MYitems {\iWidget{}\multi{4}{\iwire{}}\iBible{}\multi{2}{\isyringe{}}}
+  \s\MYitems {\iWidget{}\multi{4}{\iwire{}}\iBible{}\multi{3}{\isyringe{}}}
   }
   
 %% The ballroom
