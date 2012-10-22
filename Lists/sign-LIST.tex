@@ -199,6 +199,13 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYtext	{The name plaque says {\bf \cActive{\MYname{}}}.  If you have the room key with item {\bf \# 106}, you may enter the room.}
   \s\MYitems {\iBible{}}
   }
+  
+\NEW{Sign}{\sLiTempeh}{
+  \s\MYname	{A Hotel Room}
+  \s\MYloc	{- 004}
+  \s\MYtext	{The name plaque says {\bf LiTempeh}.  If you have the room key with item {\bf \# 107}, you may enter the room.}
+  \s\MYitems {\iBible{}}
+  }
  
 %% The Kitchen
 \NEW{Sign}{\sMortarAndPestle}{
@@ -289,9 +296,9 @@ Buy Nibbles n’ Kits dog food! Buy Peach Laundry Detergent! Buy Nibbles n’ Kits d
 \NEW{Sign}{\sWater}{
   \s\MYname	{A Block of Water}
   \s\MYloc	{Blocking hall off of - 002}
-  \s\MYtext	{There appears to be a floating aquarium in the middle of this hallway, blocking most of the passage. It is possible to squeeze by next to the wall if you’re careful.
+  \s\MYtext	{\bf{It is possible to squeeze past if you\'re careful.}
 
-But on closer inspection, this aquarium lacks glass. It is simply a cube of water, held in the shape of a cube by god-knows-what, with some very confused fishes swimming around haphazardly inside.
+There appears to be a floating aquarium in the middle of this hallway, blocking most of the passage. But on closer inspection, this aquarium lacks glass. It is simply a cube of water, held in the shape of a cube by god-knows-what, with some very confused fishes swimming around haphazardly inside.
 
 If you have a net-like device and make a CR 2 attack, you can catch a fish. Open the packet below.}
   \s\MYitems {\multi{4}{iFish{}} }
@@ -431,7 +438,7 @@ If you have a net-like device and make a CR 2 attack, you can catch a fish. Open
   \s\MYname	{A display of stuffed animals}
   \s\MYloc	{-030}
   \s\MYtext	{There are a whole host of stuffed animals on display here. If you would like to search the pile of stuffed animals, place your hand on the sign for 1 minute, then you may take an item if one is available.}
-  \s\MYitems {}%%A GM will put the item into the envelope when the utopia state appears in game
+  \s\MYitems {\iGiraffe{}\iDog{}\iCat{}\iBird{}\iDinosaur{}\iMonkey{}}%%A GM will put the item into the envelope when the utopia state appears in game
   }
   
 \NEW{Sign}{\sGiftShopWindow}{
@@ -499,7 +506,7 @@ Wait a minute… what color is the fabric? It’s not one you’ve ever seen before. Y
   
  Everything in this room seems to be sprouting leaves. Even the plastic and metal furniture is sprouting plastic and metal foliage.
 
-For every 30 seconds spent in this room, lower your Ω by 1.
+For every 30 seconds spent within 2 ZoC of this sign, lower your $\Omega$ by 1.
 }
   \s\MYitems {\iWidget{}}
   }
