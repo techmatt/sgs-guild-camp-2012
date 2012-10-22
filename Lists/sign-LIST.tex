@@ -184,9 +184,13 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYname	{A Hotel Room}
   \s\MYloc	{- 004}
   \s\MYtext	{The name plaque says {\bf \cPastor{\MYname{}}}.  If you have the room key with item {\bf \# 105}, you may enter the room.
-
-  I}
+  }
   \s\MYitems {\iBible{}\isyringe{}}
+  }
+  
+\NEW{SignTiny}{\sI}{
+  \s\MYname	{I}
+  \s\MYloc	{- 004}
   }
   
 \NEW{Sign}{\sActiveRoom}{
@@ -202,6 +206,11 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYloc	{- 002}
   \s\MYtext	{A Mortar and Pestle are lying on the counter.}  
   \s\MYitems {\iPoisonedWine{}}
+  }
+  
+\NEW{SignTiny}{\sR}{
+  \s\MYname	{R}
+  \s\MYloc	{- 002}
   }
   
 \NEW{Sign}{\sRefrigerator}{
@@ -230,10 +239,16 @@ Once you have completed one of the above requirements, you may stand with your h
 \NEW{Sign}{\sBarCounter}{
   \s\MYname	{The Bar}
   \s\MYloc	{- 002}
-  \s\MYtext	{Normally there would be a bartender here, mixing drinks. If you would like to search behind the counter, place both hands on this sign for 30 seconds. You may then take 1 item from the counter.
+  \s\MYtext	{Normally there would be a bartender here, mixing drinks. If you would like to search behind the counter, place both hands on this sign for 30 seconds. You may then take 1 item from the counter. 
   
-  T}
+  The items here are essencially infinate. If the envelop is empty, tell a GM.
+}
   \s\MYitems {\multi{20}{\iWine{}}\multi{10}{\iVial{}}\iPocketWatch{}} 
+  }
+  
+\NEW{SignTiny}{\sT}{
+  \s\MYname	{T}
+  \s\MYloc	{- 002}
   }
   
 \NEW{Sign}{\sTV}{
@@ -262,9 +277,13 @@ Buy Nibbles n’ Kits dog food! Buy Peach Laundry Detergent! Buy Nibbles n’ Kits d
   \s\MYname	{A Pile of Wood}
   \s\MYloc	{Hall off of - 002}
   \s\MYtext	{An assorted collection of wooden planks and boards. If you would like to search the pile, place a hand on this sign for 1 minute. You may then take 1 item of your choosing from the pile.
-  
-  A}
+}
   \s\MYitems {\multi{3}{\iTwoByFour{}}\multi{3}{\iRope{}}\iBinoculars{}}
+  }
+  
+\NEW{SignTiny}{\sA}{
+  \s\MYname	{A}
+  \s\MYloc	{Hall off of - 002}
   }
 
 \NEW{Sign}{\sWater}{
@@ -463,11 +482,15 @@ Wait a minute… what color is the fabric? It’s not one you’ve ever seen before. Y
   \s\MYtext	{This is the Grand Ballroom for the hotel. The floors are a rich, grainy red wood.  The walls are covered in gilded wallpaper and the sweeping, the vaulted ceilings are graced by elaborate chandeliers. 
   
   The wedding is scheduled to take place here this evening.
-  
-  B}
+}
   \s\MYitems {\iCellphone{}}
   }
-  
+
+\NEW{SignTiny}{\sB}{
+  \s\MYname	{B}
+  \s\MYloc	{- 013}
+  }
+ 
   %% Spa
 \NEW{Sign}{\sSpa}{
   \s\MYname	{A Spa}
@@ -477,8 +500,18 @@ Wait a minute… what color is the fabric? It’s not one you’ve ever seen before. Y
  Everything in this room seems to be sprouting leaves. Even the plastic and metal furniture is sprouting plastic and metal foliage.
 
 For every 30 seconds spent in this room, lower your Ω by 1.
-
-B}
+}
   \s\MYitems {\iWidget{}}
   }
  %% THIS IS A GLITCH ITEM and it needs a star sticker
+
+
+%%Windows for flavor text and to make it clear that there is nothing outside.
+
+\NEW{Sign}{\sWindow}{
+  \s\MYname	{A Window}
+  \s\MYloc	{}
+  \s\MYtext	{This window used to look out over the grounds of the hotel, but now when you look out, you see\ldots \emph{nothing}.  It's disconcerting because you don't see darkness, or light, or anything. There is just--nothing. The window won't budge, and you aren't sure you'd want to open it anyway.
+  }
+  \s\MYitems {\iCellphone{}}
+  }
