@@ -145,7 +145,7 @@
 
 {\bf 1. } Possess the appropriate room key.
 
-{\bf 2. } You may hit the door with a {\bf CR of 5} or greater.
+{\bf 2. } You may hit the door with a {\bf CR of 5} or greater. If you do so, you must write ``Broken'' on the door to indicate that the door is now broken down and anyone can pass freely in and out of the room.
 
 {\bf 3. } Hack your way in. The lock has a difficulty level of {\bf 1} unless the room belongs to \cScientist{\MYname{}}, in which case the lock has a difficulty level of {\bf 2}.
 
@@ -159,7 +159,7 @@ Once you have completed one of the above requirements, you may stand with your h
   
   
   If you have the room key with item {\bf \# 100}, you may enter the room.}
-  \s\MYitems {\iBible{}}
+  \s\MYitems {\iBible{} \iJewelry{}}
   }
   
 \NEW{Sign}{\sGroomRoom}{
@@ -177,7 +177,7 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYtext	{The name plaque says {\bf \cScientist{\MYname{}}}. Below it is another name plaque that says {\bf \cKid{\MYname{}}}. 
   
   If you have the room key with item {\bf \# 102 or 103}, you may enter the room.}
-  \s\MYitems {\iBible{}\iBall{}\iPaper{}}
+  \s\MYitems {\iBible{}\iBall{}\iPaper{} \iJewelry{}}
   }
   
 \NEW{Sign}{\sRivalRoom}{
@@ -186,7 +186,7 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYtext	{The name plaque says {\bf \cRival{\MYname{}}}.  
   
   If you have the room key with item {\bf \# 104}, you may enter the room.}
-  \s\MYitems {\iBible{}\iWidget{}}
+  \s\MYitems {\iBible{}\iWidget{}\iIpod{}}
   }
   
 \NEW{Sign}{\sPastorRoom}{
@@ -219,15 +219,17 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYtext	{The name plaque says {\bf Nava}.  
   
   If you have the room key with item {\bf \# 107}, you may enter the room.}
-  \s\MYitems {\iBible{}\multi{5}{\iDrug{}}}
+  \s\MYitems {\iBible{}\multi{5}{\iDrug{}}\iMonies{}\iMonies{}\iMonies{}}
   }
  
 %% The Kitchen
 \NEW{Sign}{\sMortarAndPestle}{
-  \s\MYname	{A Mortar and Pestle}
+  \s\MYname	{A Food Processor}
   \s\MYloc	{- 002}
-  \s\MYtext	{A Mortar and Pestle are lying on the counter.}  
-  \s\MYitems {\iPoisonedWine{}}
+  \s\MYtext	{A Mortar and Pestle are lying on the counter.
+  
+  {\bf You cannot interact with this item unless you know otherwise.}}  
+  \s\MYitems {\multi{4}{\iPoisonedWine{}}}
   }
   
 \NEW{SignTiny}{\sR}{
@@ -249,7 +251,7 @@ Once you have completed one of the above requirements, you may stand with your h
   \s\MYloc	{- 002}
   \s\MYtext	{A big, industrial sized refrigerator. 
   
-  If you would like to search the refrigerator, place both hands on this sign for 30 seconds. Note: The items available here are effectively infinate in quantity. If this envelope is ever empty, tell a GM.}
+  If you would like to search the refrigerator, place both hands on this sign for 30 seconds. Note: The items available here are effectively infinite in quantity. If this envelope is ever empty, tell a GM.}
   \s\MYitems {\multi{5}{\iMagnet{}}} 
   }
 
@@ -280,7 +282,7 @@ Once you have completed one of the above requirements, you may stand with your h
   
   If you would like to search behind the counter, place both hands on this sign for 30 seconds. You may then take 1 item from the counter. The items here are essensially infinite in quantity. If the envelop is empty, tell a GM.
 }
-  \s\MYitems {\multi{20}{\iWine{}}\multi{10}{\iVial{}}\iPocketWatch{}} 
+  \s\MYitems {\multi{20}{\iWine{}}\multi{10}{\iVial{}}\iPocketWatch{}\iMonies{}} 
   }
   
 \NEW{SignTiny}{\sT}{
@@ -307,7 +309,7 @@ Buy Nibbles n’ Kits dog food! Buy Peach Laundry Detergent! Buy Nibbles n’ Kits d
   \s\MYtext	{A big metal toolbox.
   
   If you would like to search the toolbox, place a hand on this sign for 1 minute. You may then take 1 item of your choosing from the toolbox.}
-  \s\MYitems {\multi{3}{\iSolderingIron{}}\iWidget{} }
+  \s\MYitems {\multi{3}{\iSolderingIron{}}\iWidget{}\iMonies{}}
   }
   
 \NEW{Sign}{\sPileOfWood}{
@@ -333,7 +335,7 @@ Buy Nibbles n’ Kits dog food! Buy Peach Laundry Detergent! Buy Nibbles n’ Kits d
 There appears to be a floating aquarium in the middle of this hallway, blocking most of the passage. But on closer inspection, this aquarium lacks glass. It is simply a cube of water, held in the shape of a cube by god-knows-what, with some very confused fishes swimming around haphazardly inside.
 
 If you have a net-like device and make a CR 2 attack, you can catch a fish. Open the packet below.}
-  \s\MYitems {\multi{4}{iFish{}} }
+  \s\MYitems {\multi{4}{\iFish{}}}
   }
 %% THIS IS A GLITCH ITEM and it needs a star sticker
 %% Also, accompany this with an outline in masking tape on the ground
@@ -343,6 +345,7 @@ If you have a net-like device and make a CR 2 attack, you can catch a fish. Open
   \s\MYname	{The Reception desk}
   \s\MYloc	{Main Hallway}
   \s\MYtext	{Normally there would be someone staffing the desk.}
+  \s\MYitems{\iJewelry{}\iMonies{}}
   }
   
 \NEW{Sign}{\sPortrait}{
@@ -358,7 +361,7 @@ If you have a net-like device and make a CR 2 attack, you can catch a fish. Open
   
   If you would like to take a flower, stand with both hands on the sign for 30 seconds then take a flower.
   }
-  \s\MYitems {\multi{15}{\iFlowers{} }}
+  \s\MYitems {\multi{15}{\iFlowers{}}}
   }
   
   %% THIS IS A GLITCH ITEM and it needs a star sticker
@@ -455,7 +458,7 @@ If you have a net-like device and make a CR 2 attack, you can catch a fish. Open
   \s\MYname	{The Gift Shop}
   \s\MYloc	{-030}
   \s\MYtext	{This is the gift shop for the hotel. It is small and mostly full of cheap junk.}
-  \s\MYitems {}
+  \s\MYitems {\iMonies{}}
   }
 
 \NEW{Sign}{\sGiftShopDisplay}{
@@ -482,7 +485,7 @@ If you have a net-like device and make a CR 2 attack, you can catch a fish. Open
   \s\MYtext	{This trendy boutique is selling some chic skirts and suits! Look, matching purses and wallets!
 
 Wait a minute… what color is the fabric? It’s not one you’ve ever seen before. You’re not sure you can describe it.}
-  \s\MYitems {\iClothes{}}
+  \s\MYitems {\iClothes{} \iJewelry{}}
   }
  %% THIS IS A GLITCH ITEM and it needs a star sticker
 
